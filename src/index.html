@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="main-logo">
+        <a
+          href="#"
+          aria-label="Go to home page"
+          ><img
+            class="img"
+            src="./images/logo.svg"
+            alt=""
+        /></a>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="main-title">
+        We are launching <span class="main-title__is-bold">soon!</span>
+      </h1>
+      <p class="description">Subscribe and get notified</p>
+      <form
+        class="form form_type_newsletter-signup"
+        method="POST"
+        novalidate
+      >
+        <div class="form__field">
+          <label
+            class="form__label form__label_is-hidden"
+            for="email"
+            >Email address</label
+          >
+          <input
+            class="form__input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email Address"
+            required
+          />
+          <p
+            class="form__error-msg from__error-msg_is-hidden"
+            error-msg-for="email"
+          ></p>
+        </div>
+        <button
+          type="submit"
+          class="btn form__btn"
+        >
+          Notify Me
+        </button>
+      </form>
+      <img
+        class="img main__img"
+        src="./images/illustration-dashboard.png"
+        alt=""
+      />
+    </main>
+    <footer class="footer">
+      <ul class="btn-group">
+        <a
+          href="#"
+          aria-label="Ping facebook page"
+          ><li class="btn btn_type_social-media">
+            <i class="fa-brands fa-facebook-f fa-lg"></i></li
+        ></a>
+        <a
+          href="#"
+          aria-label="Ping twitter page"
+          ><li class="btn btn_type_social-media">
+            <i class="fa-brands fa-twitter fa-lg"></i></li
+        ></a>
+        <a
+          href="#"
+          aria-label="Ping instagram page"
+          ><li class="btn btn_type_social-media">
+            <i class="fa-brands fa-instagram fa-lg"></i></li
+        ></a>
+      </ul>
+      <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
