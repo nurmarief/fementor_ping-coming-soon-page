@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  border: 0.1rem solid var(--very-dark-blue);
+  padding: 1rem;
+  transition: all 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+}
+
+.btn_type_social-media {
+  color: var(--blue);
+  border-radius: 50%;
+  border-color: var(--pale-blue);
+  width: 3.3rem;
+  aspect-ratio: 1 / 1;
+
+  &:hover {
+    color: var(--white);
+    border-color: var(--blue);
+    background-color: var(--blue);
+  }
+}

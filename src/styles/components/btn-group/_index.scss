@@ -1,0 +1,6 @@
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: clamp(1rem, calc(1.5vw + 0.1rem), 2rem);
+  margin-block: clamp(1.5rem, calc(1.5vw + 0.1rem), 2rem);
+}

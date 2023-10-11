@@ -1,0 +1,26 @@
+@use 'sass:map';
+@use '../../variables/breakpoints';
+
+.footer {
+  text-align: center;
+  padding-block: 3rem;
+  padding-inline: 1rem;
+
+  @media screen and (min-width: map.get(breakpoints.$breakpoints, 'tablet')) {
+    & {
+      padding-inline: 3rem;
+    }
+  }
+
+  @media screen and (min-width: map.get(breakpoints.$breakpoints, 'desktop')) {
+    & {
+      padding-inline: 5rem;
+    }
+  }
+
+  @media screen and (min-width: map.get(breakpoints.$breakpoints, 'desktop-lg')) {
+    & {
+      padding-inline: 10rem;
+    }
+  }
+}

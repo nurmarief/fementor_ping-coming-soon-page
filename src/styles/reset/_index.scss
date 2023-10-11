@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  margin-inline: 0;
+  margin-block: 0;
+  border: none;
+  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+button,
+input {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button {
+  background-color: transparent;
+}

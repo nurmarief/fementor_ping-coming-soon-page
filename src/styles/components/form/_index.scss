@@ -1,0 +1,98 @@
+@use 'sass:map';
+@use '../../variables/breakpoints';
+
+.form {
+  font-size: clamp(1rem, calc(1vw + 0.5rem), 1.5rem);
+  display: block;
+  padding: 1rem;
+}
+
+.form_type_newsletter-signup {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: map.get(breakpoints.$breakpoints, 'mobile-lg')) {
+    & {
+      margin-inline: auto;
+      width: 80%;
+    }
+  }
+
+  @media screen and (min-width: map.get(breakpoints.$breakpoints, 'tablet')) {
+    & {
+      flex-direction: row;
+      gap: 1rem;
+      width: 90%;
+    }
+  }
+}
+
+.form_type_newsletter-signup .form__input {
+  border-radius: 99999rem;
+}
+
+.form_type_newsletter-signup .form__field {
+  @media screen and (min-width: map.get(breakpoints.$breakpoints, 'tablet')) {
+    & {
+      flex-grow: 1;
+      margin-block: 0;
+    }
+  }
+}
+
+.form_type_newsletter-signup .form__btn {
+  $box-shadow: 0.2rem 0.2rem 0.5rem var(--blue);
+  $box-shadow-clicked: 0.2rem 0.2rem 0.2rem var(--very-dark-blue) inset;
+
+  border: none;
+  border-radius: 99999rem;
+  background-color: var(--blue);
+  color: var(--white);
+  height: fit-content;
+  box-shadow: $box-shadow;
+
+  @media screen and (min-width: map.get(breakpoints.$breakpoints, 'tablet')) {
+    & {
+      flex: 0 0 10rem;
+    }
+  }
+
+  &:active {
+    box-shadow: $box-shadow-clicked;
+  }
+}
+
+.form__field {
+  display: block;
+  margin-block: 1rem;
+}
+
+.form__label {
+  display: block;
+  padding-block: 1rem;
+}
+
+.form__label_is-hidden {
+  display: none;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid var(--pale-blue);
+}
+
+.form__input_is-invalid {
+  border: 0.1rem solid var(--light-red);
+}
+
+.form__error-msg {
+  font-size: clamp(0.9rem, calc(1vw + 0.1rem), 1.2rem);
+  color: var(--light-red);
+  margin-block: 0.5rem;
+}
+
+.from__error-msg_is-hidden {
+  display: none;
+}

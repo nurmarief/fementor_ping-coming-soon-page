@@ -1,0 +1,13 @@
+@use 'sass:map';
+@use '../../variables/breakpoints';
+
+.header {
+  margin-block: 5rem 2rem;
+  padding-inline: clamp(1rem, calc(2vw + 0.5rem), 4rem);
+
+  @media screen and (min-width: map.get(breakpoints.$breakpoints, 'tablet')) {
+    & {
+      margin-block-start: 2rem;
+    }
+  }
+}

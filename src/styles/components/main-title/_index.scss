@@ -1,0 +1,11 @@
+.main-title {
+  font-size: clamp(1.8rem, calc(3vw + 0.5rem), 4rem);
+  font-weight: 300;
+  color: var(--gray);
+  margin-block: clamp(1rem, calc(1vw + 0.1rem), 1.3rem);
+}
+
+.main-title__is-bold {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
